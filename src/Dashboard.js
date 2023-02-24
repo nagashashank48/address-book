@@ -7,13 +7,8 @@ import { Link } from 'react-router-dom'
 import './dashboard.scss'
 function Dashboard(props){
     const [data,setData]=useState([]);
-    const[select,setSelect]=useState({
-        name: "Chandermani Arora",
-        email: "Chandermani@technovert.com",
-        number: "+91 92929292922",
-        landline: "0122344",
-        website: "www.Chandermani.com",
-        address: "h-no:22222"    });
+    const [activeContact,setActiveContact]=useState();
+    const[select,setSelect]=useState({ });
    
 
     
@@ -21,12 +16,15 @@ function Dashboard(props){
         axios.get(`http://localhost:3003/details`).then(res => {
             const a=res.data;
             setData(a);
-           
+            setSelect(a[0])
+            console.log(a[0].address)
           })
     },[])
     const showdata=(item)=>{
+       
       setSelect(item);
      props.onclick(select);
+     
     }
     
     const deletedata=()=>{
@@ -34,7 +32,10 @@ function Dashboard(props){
             window.location.reload();
         })
     }
-   
+   const changecolor=(item)=>{
+    setActiveContact(item.id);
+    console.log(activeContact)
+   }
   
     
     return(
@@ -43,17 +44,18 @@ function Dashboard(props){
          <div>
            <Row>
                
-                <Col sm='4'>
+                <Col sm='4' style={{marginLeft:'30px'}}>
                 {
                  data.map((item)=>{
                     return(
-                        
-                   <div  className='sideform'  onClick={()=>showdata(item)}>
-                        
+                    <div  style={{backgroundColor:item.id===activeContact?'#cee7f2':'white'}} onClick={()=>changecolor(item)}>
+                   <div  className='sideform'   onClick={()=>showdata(item)}>
+                   
                     <div  style={{fontSize:'30px'}}key={item.name}>{item.name}</div>
                     <div key={item.email} >{item.email}</div>
                     <div key={item.number}>{item.number}</div>
                     </div>
+             </div>
                  
                   ) })
                 }
@@ -64,8 +66,8 @@ function Dashboard(props){
            <div>Email:{select.email}</div><br></br>
            <div>Mobile:{select.number}</div>
            <div>Landline:{select.landline}</div><br></br>
-           <div>Website:{select.website}</div><br></br>
-           <div>Address:{select.address}</div>
+           <div >Website:{select.website}</div><br></br>
+           <div  className='address' dangerouslySetInnerHTML={{_html:select.address}}></div>
            </div>
         </Col>
         <Col sm='3' style={{paddingRight:'0px'}}>

@@ -1,6 +1,5 @@
 .sideform{
     border: 1px solid;    
-    margin-left:30px ;
     padding-left:20px ;
     border-bottom:none;
     padding-bottom: 10px;
@@ -9,13 +8,12 @@
         background-color: #cee7f2;
         cursor: grab;
     }
-    &:active{
-        background-color: red;
-    }
+   
+    
 }
 .sideform:last-child{
     border-bottom: 1px solid;
-}
+} 
 
 .contact{
 padding-top:10px ;
@@ -34,6 +32,10 @@ margin-left: 30px;
 }
 .details{
     font-weight:600;
+}
+.address{
+    word-wrap: break-all;
+
 }
 
 
