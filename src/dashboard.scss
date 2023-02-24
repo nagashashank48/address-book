@@ -1,0 +1,39 @@
+.sideform{
+    border: 1px solid;    
+    margin-left:30px ;
+    padding-left:20px ;
+    border-bottom:none;
+    padding-bottom: 10px;
+    font-family:'calibri light' ;
+    &:hover{
+        background-color: #cee7f2;
+        cursor: grab;
+    }
+    &:active{
+        background-color: red;
+    }
+}
+.sideform:last-child{
+    border-bottom: 1px solid;
+}
+
+.contact{
+padding-top:10px ;
+padding-bottom:10px ;
+margin-left: 30px;
+}
+
+.buttons{
+    border: none;
+    background-color: white;
+    padding-top: 10px;
+}
+.headname{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.details{
+    font-weight:600;
+}
+
+

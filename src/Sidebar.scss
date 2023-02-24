@@ -1,0 +1,16 @@
+.sidebar{
+    border: 1px solid;    
+    margin-left:30px ;
+    padding-left:20px ;
+    border-bottom:none;
+    padding-bottom: 10px;
+    font-family:'calibri light' ;
+    &:hover{
+        background-color: #cee7f2;
+        cursor: grab;
+    }
+    
+}
+.sidebar:last-child{
+    border-bottom: 1px solid;
+} 

@@ -1,0 +1,40 @@
+{
+  "details": [
+    {
+      "id": "1",
+      "name": "Chandermani Arora",
+      "email": "Chandermani@technovert.com",
+      "number": "+91 92929292922",
+      "landline": "01223445",
+      "website": "www.Chandermani.com",
+      "address": "h-no:22222"
+    },
+    {
+      "id": "2",
+      "name": "Sashi Pagadala",
+      "email": "vijay@technovert.com",
+      "number": "+91 92929292922",
+      "landline": "0122344",
+      "website": "www.Chandermani.com",
+      "address": "h-no:22222"
+    },
+    {
+      "id": "3",
+      "name": "Praveen Battula",
+      "email": "vijay@technovert.com",
+      "number": "+91 92929292922",
+      "landline": "0122344",
+      "website": "www.Chandermani.com",
+      "address": "h-no:22222"
+    },
+    {
+      "id": "4",
+      "name": "Vijay Yalamanchili",
+      "email": "vijay@technovert.com",
+      "number": "+91 92929292922",
+      "landline": "0122344",
+      "website": "www.Chandermani.com",
+      "address": "h-no:22222"
+    }
+  ]
+}

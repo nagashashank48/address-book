@@ -1,0 +1,27 @@
+$backgroundcolor:#3399cc;
+.addressbook{
+background-color: $backgroundcolor;
+font-size: 40px;
+color: white;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 20px;
+font-family: arial light;
+// font-family: 'centurygothic';
+}
+.navbutton{
+    text-decoration : none;
+      color :white;
+      margin-left: 23px;
+      font-weight:bolder;
+
+}
+.image{
+    padding-right:30px;
+    float:right
+}
+.secoundbar{
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
