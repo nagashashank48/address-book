@@ -3,16 +3,23 @@
     padding-left:20px ;
     border-bottom:none;
     padding-bottom: 10px;
+
     font-family:'calibri light' ;
     &:hover{
         background-color: #cee7f2;
-        cursor: grab;
+        cursor:pointer;
     }
    
     
 }
-.sideform:last-child{
+.total{
+    margin-left:30px ;
+
+}
+.total:last-child{
     border-bottom: 1px solid;
+    // margin-left:30px ;
+
 } 
 
 .contact{
@@ -29,13 +36,19 @@ margin-left: 30px;
 .headname{
     font-size: 30px;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 .details{
     font-weight:600;
 }
-.address{
-    word-wrap: break-all;
+.address1{
+white-space: pre-wrap;
+overflow:hidden;
 
 }
-
-
+.margins{
+    margin-bottom: 20px;
+}
+.rowright{
+    margin-right: unset;
+}

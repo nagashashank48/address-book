@@ -1,26 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {Link} from "react-router-dom";
 // import "./Navigationbar.css";
 import './Navigationbar.scss';
-import edit1 from './images/blog-icon.png'
+import blog from './images/blog-icon.png'
 
-function Navigationbar(){
-    const [activebutton,setActivebutton]=useState('dashboard')
+function Navigationbar(props){
+    const [activebutton,setActivebutton]=useState(props.colors)
+    console.log(props.colors)
     
 return(
     <div >
     <div className="addressbook">Address Book</div>
 
     <div className="secoundbar" >
-   
-     
- <Link to='/'   style={{ backgroundColor: activebutton === 'dashboard' ? 'gray' : 'black' }}  onClick={()=>{setActivebutton('dashboard')}}className='navbutton' > HOME</Link>
- <Link to='/add'  style={{ backgroundColor: activebutton === 'add' ? 'gray' : 'black' }}  onClick={()=>{setActivebutton('add')}} className='navbutton' >+ ADD</Link>
-
- <img src={edit1} className='image' alt='' ></img>
+   <Link to='/'    > <button style={{ backgroundColor: activebutton=== 'dashboard' ? '#FF9000' : 'black',borderLeft: activebutton === 'dashboard' ? '3px solid white' : 'black' }}  onClick={()=>{setActivebutton('dashboard')}}className='navbutton'>HOME</button></Link>
+ <Link to='/add'  ><button style={{ backgroundColor: activebutton === 'add' ? '#FF9000' : 'black',borderLeft: activebutton === 'add' ? '3px solid white' : 'black' }}  onClick={()=>{setActivebutton('add')}} className='navbutton' >+ ADD </button></Link>
+  <img src={blog} className='image' alt='' ></img>
+ </div>
  
 
-     </div>
 
      </div>
 )

@@ -3,10 +3,12 @@ $backgroundcolor:#3399cc;
 background-color: $backgroundcolor;
 font-size: 40px;
 color: white;
-padding-top: 10px;
-padding-bottom: 10px;
+padding-top: 17px;
+padding-bottom: 30px;
 padding-left: 20px;
+height: 90px;
 font-family: arial light;
+font-weight: 300;
 // font-family: 'centurygothic';
 }
 .navbutton{
@@ -14,14 +16,22 @@ font-family: arial light;
       color :white;
       margin-left: 23px;
       font-weight:bolder;
-
-}
+     padding-bottom: 9px;
+     padding-left: 10px;
+     padding-right: 10px;
+    //  vertical-align: middle;
+     padding-top: 7px;
+     border:none
+   }
 .image{
     padding-right:30px;
-    float:right
+    float:right;
+    padding-top: 8px;
 }
 .secoundbar{
     background-color: black;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    height:40px;
+    padding-bottom: 20px;
+    // padding-top: 5px;
+    // padding-bottom: 5px;
 }
