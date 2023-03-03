@@ -82,8 +82,8 @@ function Dashboard(props){
            </div>
         </Col>
         <Col sm='3' style={{paddingRight:'0px'}}>
-        <Link to='/edit'><button  className='buttons'><img src={editbutton} alt=''  height='15px' witdh='15px'></img>EDIT</button></Link>
-        <Link to='/'><button  className='buttons' onClick={()=>deletedata(select)}> <img src={deletebutton} alt='' height='20px' witdh='20px'></img>DELETE</button></Link>
+        <Link to='/edit'><button  className='buttons'><img src={editbutton} alt=''  height='15px' width='15px'></img>EDIT</button></Link>
+        <Link to='/'><button  className='buttons' onClick={()=>deletedata(select)}> <img src={deletebutton} alt='' height='20px' width='20px'></img>DELETE</button></Link>
         </Col>
         </Row>
 
